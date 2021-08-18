@@ -1,0 +1,286 @@
+/* global setting */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #560300
+}
+
+html {
+    font-family: "Noto Sans TC" "Roboto", sans-serif;
+}
+
+/* header */
+header {
+    background-color: #AA0601;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 30px 88px;
+}
+
+.logo {
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true");
+    background-size: cover;
+    width: 80px;
+    height: 48px;
+    text-indent:101%;
+    white-space:nowrap;
+    overflow:hidden;
+
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px;
+}
+
+header ul a {
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 0px;
+}
+
+/* footer */
+footer {
+    background-color: #AA0601;
+    padding-top: 32px;
+    padding-bottom: 39px;
+}
+
+.footer-container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+footer a, footer h2, footer p{
+    color: #FFFFFF;
+}
+
+footer .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .header .page-link, footer .header .social-media-link {
+    display: flex;
+}
+
+footer .header .page-link li a{
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 48px;
+}
+
+footer .header .social-media-link li a{
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin-left: 32px;
+}
+
+.link-facebook {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/logo-facebook.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.link-instagram {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/logo-instagram.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30%;
+}
+
+.link-line {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-line.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .footer-container .body {
+    padding: 24px 0;
+    border-bottom: #FFFFFF 1px solid;
+}
+
+footer .footer-container .body a {
+    font-size: 36px;
+    line-height: 54px;
+    vertical-align: middle;
+}
+
+.footer-phone-icon {
+    display: inline-block;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 36px;
+    height: 36px;
+    margin-right: 22px;
+    vertical-align: middle;
+}
+
+.footer-email-icon {
+    display: inline-block;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 36px;
+    height: 36px;
+    margin-right: 22px;
+    vertical-align: middle;
+}
+
+.legality {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.legality p{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.legality ul {
+    display: flex;
+}
+
+.legality ul li a{
+    margin-left: 48px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+/* pad  */
+@media (max-width: 768px) {
+    header {
+        padding: 30px;
+    }
+
+    footer {
+        padding-bottom: 21px;
+    }
+
+    .footer-container {
+        width: 90%;
+    }
+
+    footer .header .page-link li a{
+        margin-right: 40px;
+    }
+
+    footer .header .social-media-link li a{
+        display: block;
+        max-width: 24px;
+        height: 24px;
+        margin-left: 24px;
+    }
+    
+    footer .footer-container .body {
+        padding: 18px 0;
+    }
+
+    footer .footer-container .body a {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .footer-phone-icon {
+        width: 18px;
+        height: 18px;
+        margin-right: 11px;
+    }
+    
+    .footer-email-icon {
+        width: 18px;
+        height: 18px;
+        margin-right: 11px;
+    }
+
+    .legality {
+        margin-top: 16px;
+    }
+
+   .legality ul li a{
+        margin-left: 24px;
+    }
+}
+
+/* phone */
+@media (max-width: 375px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .logo {
+        display: block;
+        width: 48px;
+        height: 29px;
+        margin: 10px 0;
+    }
+
+    header ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header ul li{
+        width: 50%;
+        text-align: center;
+        border: #FFFFFF 1px solid;
+        padding: 8px 0px;
+    }
+
+
+    footer {
+        padding-bottom: 24px;
+        padding-top: 0;
+    }
+
+    footer .header {
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    footer .header .page-link{
+        display: none;
+    }
+
+    footer .header .social-media-link{
+        display: none;
+    }
+
+    footer .footer-container .body a {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .footer-phone-icon {
+        width: 15px;
+        height: 15px;
+        margin-right: 6px;
+    }
+    
+    .footer-email-icon {
+        width: 15px;
+        height: 15px;
+        margin-right: 6px;
+    }
+
+   .legality p{
+        display: none;
+    }
+
+    .legality ul , .legality a{
+        display: none;
+    }
+}
