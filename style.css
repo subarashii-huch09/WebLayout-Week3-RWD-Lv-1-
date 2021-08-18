@@ -11,6 +11,10 @@ html {
     font-family: "Noto Sans TC" "Roboto", sans-serif;
 }
 
+a:hover {
+    color:orange;
+}
+
 /* header */
 header {
     background-color: #AA0601;
