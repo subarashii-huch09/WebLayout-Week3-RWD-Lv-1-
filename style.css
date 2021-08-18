@@ -61,7 +61,7 @@ footer a, footer h2, footer p{
     color: #FFFFFF;
 }
 
-footer .header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,21 +85,21 @@ footer .header .social-media-link li a{
 }
 
 .link-facebook {
-    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/logo-facebook.svg");
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/week3/icon-fb.svg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
 }
 
 .link-instagram {
-    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/logo-instagram.svg");
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/week3/icon-ig.svg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 30%;
 }
 
 .link-line {
-    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-line.svg");
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/week3/icon-line.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -177,8 +177,7 @@ footer .footer-container .body a {
     }
 
     footer .header .social-media-link li a{
-        display: block;
-        max-width: 24px;
+        width: 24px;
         height: 24px;
         margin-left: 24px;
     }
@@ -229,7 +228,6 @@ footer .footer-container .body a {
     }
 
     header ul {
-        display: flex;
         flex-wrap: wrap;
     }
 
@@ -247,8 +245,7 @@ footer .footer-container .body a {
     }
 
     footer .header {
-        justify-content: flex-end;
-        position: relative;
+        justify-content: flex-start;
     }
 
     footer .header .page-link{
