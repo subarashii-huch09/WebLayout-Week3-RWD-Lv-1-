@@ -159,7 +159,7 @@ footer .footer-container .body a {
 }
 
 /* pad  */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     header {
         padding: 30px;
     }
